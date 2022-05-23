@@ -2,10 +2,10 @@
     <string name="app_name">Workshop Apps</string>
 
     <string name="first_slide">Choose Your Workshop</string>
-    <string name="second_slide">Most Likes</string>
-    <string name="third_slide">Good Services</string>
+    <string name="second_slide">The joy of discovery</string>
+    <string name="third_slide">Relentless curiosity</string>
 
-    <string name="description">This is a test message.</string>
+    <string name="description">We are always on the lookout for new and unique experiences.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
