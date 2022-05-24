@@ -81,7 +81,8 @@ public class HomeFragment extends Fragment {
                 startActivity(intent);
             }
         });
-
+        
+        // Show All Button
         newWorkshopShowAll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -102,7 +103,8 @@ public class HomeFragment extends Fragment {
         slideModels.add(new SlideModel(R.drawable.banner3,"[String]", ScaleTypes.CENTER_CROP));
 
         imageSlider.setImageList(slideModels);
-
+        
+        //Pop up message for sign in and waiting
         progressDialog.setTitle("Welcome To My App");
         progressDialog.setMessage("please wait...");
         progressDialog.setCanceledOnTouchOutside(false);
