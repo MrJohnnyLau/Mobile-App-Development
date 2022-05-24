@@ -41,7 +41,8 @@ public class CartActivity extends AppCompatActivity {
     MyCartAdapter cartAdapter;
 
     Button orderNow;
-
+    
+    //Firebase
     private FirebaseAuth auth;
     private FirebaseFirestore firestore;
 
