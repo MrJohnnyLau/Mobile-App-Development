@@ -34,6 +34,7 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
 
     GoogleMap map;
     Button button_location;
+    
     FusedLocationProviderClient fusedLocationProviderClient;
     SupportMapFragment supportMapFragment;
     LocationManager locationManager;
@@ -57,14 +58,16 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                     getCurrentLocation();
                 }
         });
-
+        
+        // Check the devices permission
         if (ActivityCompat.checkSelfPermission(MapActivity.this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED){
             getCurrentLocation();
         }else {
             ActivityCompat.requestPermissions(MapActivity.this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 404);
         }
     }
-
+    
+    // Get user current location
     private void getCurrentLocation() {
         LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         @SuppressLint("MissingPermission") Task<Location> task = fusedLocationProviderClient.getLastLocation();
@@ -87,7 +90,7 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
             }
         });
     }
-
+    
     @SuppressLint("MissingSuperCall")
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
@@ -97,7 +100,8 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
             }
         }
     }
-
+    
+    // Thw Workshop location marker
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
         map = googleMap;
