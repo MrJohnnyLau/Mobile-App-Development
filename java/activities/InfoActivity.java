@@ -34,7 +34,8 @@ public class InfoActivity extends AppCompatActivity implements InfoAdapter.Selec
     RecyclerView recyclerView;
     private InfoAdapter infoAdapter;
     private List<InfoModel> infoModelList;
-
+    
+    //firebase
     FirebaseFirestore firestore;
     FirebaseAuth auth;
 
