@@ -74,7 +74,8 @@ public class InfoActivity extends AppCompatActivity implements InfoAdapter.Selec
         infoAdapter = new InfoAdapter(infoModelList, getApplicationContext(), this);
 
         recyclerView.setAdapter(infoAdapter);
-
+        
+        // Get user info from firebase
         firestore.collection("CurrentUser").document(auth.getCurrentUser().getUid())
                 .collection("Information").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
             @Override
