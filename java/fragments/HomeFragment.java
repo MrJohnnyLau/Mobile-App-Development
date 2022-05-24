@@ -98,8 +98,8 @@ public class HomeFragment extends Fragment {
         List<SlideModel> slideModels = new ArrayList<>();
 
         slideModels.add(new SlideModel(R.drawable.banner1,"TEST 1", ScaleTypes.CENTER_CROP));
-        slideModels.add(new SlideModel(R.drawable.banner1,"TEST 2", ScaleTypes.CENTER_CROP));
-        slideModels.add(new SlideModel(R.drawable.banner1,"TEST 3", ScaleTypes.CENTER_CROP));
+        slideModels.add(new SlideModel(R.drawable.banner2,"TEST 2", ScaleTypes.CENTER_CROP));
+        slideModels.add(new SlideModel(R.drawable.banner3,"TEST 3", ScaleTypes.CENTER_CROP));
 
         imageSlider.setImageList(slideModels);
 
