@@ -41,7 +41,8 @@ public class LoginActivity extends AppCompatActivity {
         btLogin = findViewById(R.id.bt_login);
 
         BiometricManager biometricManager = BiometricManager.from(this);
-
+        
+        //Check the user devices biometric sensor
         switch (biometricManager.canAuthenticate()) {
             case BiometricManager.BIOMETRIC_SUCCESS:
                 tvMessage.setText("You can use biometric to login");
