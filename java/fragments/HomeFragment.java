@@ -97,7 +97,8 @@ public class HomeFragment extends Fragment {
         //image slider
         ImageSlider imageSlider = root.findViewById(R.id.image_slider);
         List<SlideModel> slideModels = new ArrayList<>();
-
+        
+        //set banner image
         slideModels.add(new SlideModel(R.drawable.banner1,"[String]", ScaleTypes.CENTER_CROP));
         slideModels.add(new SlideModel(R.drawable.banner2,"[String]", ScaleTypes.CENTER_CROP));
         slideModels.add(new SlideModel(R.drawable.banner3,"[String]", ScaleTypes.CENTER_CROP));
