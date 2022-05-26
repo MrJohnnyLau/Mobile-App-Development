@@ -98,6 +98,8 @@ public class CartActivity extends AppCompatActivity {
             }
         });
     }
+    
+    // Cart, Total Amount
     public BroadcastReceiver mMessageReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
