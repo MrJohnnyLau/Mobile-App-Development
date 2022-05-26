@@ -56,7 +56,8 @@ public class LoginActivity extends AppCompatActivity {
                 btLogin.setVisibility(View.GONE);
                 break;
         }
-
+        
+        //Fingerprint Auth
         BiometricPrompt prompt = new BiometricPrompt(this, ContextCompat.getMainExecutor(this),
                 new BiometricPrompt.AuthenticationCallback() {
                     @Override
@@ -113,7 +114,8 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(this, "Enter Password", Toast.LENGTH_SHORT).show();
             return;
         }
-
+        
+       //Login Auth (firebase)
         auth.signInWithEmailAndPassword(userEmail, userPassword)
                 .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
                     @Override
