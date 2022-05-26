@@ -51,7 +51,9 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
         supportMapFragment.getMapAsync(this);
 
         fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(MapActivity.this);
-
+        
+        
+        //For "My Location" Button
         button_location.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
