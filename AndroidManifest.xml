@@ -44,6 +44,8 @@
         <activity
             android:name=".activities.DetailedActivity"
             android:exported="false" />
+        
+        //start page
         <activity
             android:name=".activities.OnBoardingActivity"
             android:exported="true">
